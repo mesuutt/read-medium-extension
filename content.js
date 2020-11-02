@@ -2,7 +2,7 @@
     window.addEventListener('load', afterWindowLoaded);
 
     function afterWindowLoaded() {
-        let btnCon = document.querySelector('#paywall-trial-upsell-button');
+        let btnCon = document.querySelector('#paywall-upsell-button-upgrade');
         if (!btnCon) return;
 
         let btnReadFree = btnCon.children[0].cloneNode();        
@@ -12,6 +12,7 @@
         btnReadFree.style.backgroundColor = '#319ce8';
         btnReadFree.style.borderColor = '#319ce8';
         btnReadFree.style.marginLeft = "3px"
+        btnReadFree.style.width = "130px"
         btnReadFree.href = "#";
         btnReadFree.text = "Read for free";
 
