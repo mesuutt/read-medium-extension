@@ -22,7 +22,7 @@
             e.preventDefault();
 
             if(e.target && e.target.id == 'btnReadForFree') {
-                btnReadFree.text = "Page content loading ...";
+                btnReadFree.text = "Page loading ...";
                 replacePageContent();
             }
         });
