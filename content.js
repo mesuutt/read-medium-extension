@@ -7,16 +7,13 @@
 
         let btnReadFree = document.createElement('a');  
         btnReadFree.id = "btnReadForFree";
-        btnReadFree.classList.remove('nf');
-        btnReadFree.classList.remove('nd');
-
-        let cssText = 'background-color: #319ce8; border-color: #319ce8; margin-left:3px; color:#FFF; border-color: #319ce8;'
-        cssText += 'width: 130px; padding: 7px 16px 9px; border-width:1px; border-radius:4px;  line-height: 20px; cursor: pointer;'
-
-        btnReadFree.style.cssText = cssText;
         btnReadFree.href = "#";
         btnReadFree.textContent = "Read for free";
 
+        let cssText = 'background-color: #319ce8; border-color: #319ce8; margin-left:3px; color:#FFF; border-color: #319ce8;'
+        cssText += 'width: 130px; padding: 7px 16px 9px; border-width:1px; border-radius:4px;  line-height: 20px; cursor: pointer;'
+        btnReadFree.style.cssText = cssText;
+        
         btnCon.appendChild(btnReadFree);
 
         document.addEventListener('click', function(e) {
