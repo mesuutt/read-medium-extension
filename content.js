@@ -32,7 +32,11 @@
                 credentials: 'omit',
                 mode: 'no-cors',
             }
-        ).then(response => response.text()).then(content => document.write(content));
+        ).then(response => response.text()).then(content => {
+            var newHTML = document.open("text/html", "replace"); 
+            newHTML.write(content); 
+            newHTML.close(); 
+        });
     }
 
 })();
