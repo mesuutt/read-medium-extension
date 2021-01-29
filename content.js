@@ -2,7 +2,7 @@
     window.addEventListener('load', afterWindowLoaded);
 
     function afterWindowLoaded() {
-        let btnCon = document.querySelector('#paywall-upsell-button-upgrade');
+        let btnCon = document.querySelector('#paywall-background-color');
         if (!btnCon) return;
 
         let btnReadFree = document.createElement('a');  
